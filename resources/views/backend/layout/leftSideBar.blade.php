@@ -181,11 +181,11 @@
 
             <b class="arrow"></b>
         </li>
-{{------------------------------------------Brand Menu End--------------------------------------}}
 
 
 
 {{------------------------------------------Configuration Menu Start--------------------------------------}}
+
         <li class="">
             <a href="{{route('configuration')}}">
                 <i class="menu-icon fa fa-list-alt"></i>
@@ -194,7 +194,6 @@
 
             <b class="arrow"></b>
         </li>
-{{------------------------------------------Configuration Menu End--------------------------------------}}
 
 
 
@@ -243,7 +242,15 @@
                 </li>
             </ul>
         </li>
-{{------------------------------------------Category Menu End--------------------------------------}}
+
+        <li class="">
+            <a href="{{route('product')}}">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text"> Products </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
 
 
     </ul><!-- /.nav-list -->

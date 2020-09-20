@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Brand extends Model
+class ProductImage extends Model
 {
     public function product()
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class,'product_id','id');
     }
 }

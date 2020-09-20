@@ -79,3 +79,9 @@ Route::get('/home/brand/update/{id}','BrandController@update')->name('brand.upda
 Route::post('/home/brand/update/confirm/{id}','BrandController@updateConfirm')->name('brand.update.confirm');
 
 Route::get('/home/brand/delete/{id}','BrandController@delete')->name('brand.delete');
+
+
+
+//Products Route
+Route::get('/home/product','ProductController@index')->name('product');
+Route::post('/home/product/insert', 'ProductController@insert')->name('product.insert');

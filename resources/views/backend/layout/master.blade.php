@@ -27,7 +27,6 @@
 
             <div class="page-content">
 
-                @include('backend.layout.pageHeader')
 
                 @yield('content')
 
