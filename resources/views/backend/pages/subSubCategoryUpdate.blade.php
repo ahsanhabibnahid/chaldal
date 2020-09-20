@@ -12,7 +12,7 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{route('subcategory.update.confirm',$SingleSubCategory->id)}}">
+            <form method="POST" action="{{route('subsubcategory.update.confirm',$SingleSubCategory->id)}}">
                 @csrf
 
                 <div class="form-group">
@@ -21,26 +21,26 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Category select</label>
+                    <label for="exampleFormControlSelect1">SubCategory select</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="category_id">
                         @foreach($category as $id => $name)
-                            <option value="{{ $id }}" {{ old('category_id') == $id ? 'selected' : '' }}>{{ $name }}</option>
+                            <option value="{{ $id }}" {{ old('subcategory_id') == $id ? 'selected' : '' }}>{{ $name }}</option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Name</label>
+                    <label for="exampleInputPassword1">Sub SubCategory Name</label>
                     <input type="text" class="form-control" value="{{$SingleSubCategory->name}}" name="sub_category_name">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Icon</label>
+                    <label for="exampleInputPassword1">Sub SubCategory Icon</label>
                     <input type="text" class="form-control" value="{{$SingleSubCategory->icon}}" name="sub_category_icon">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Status</label>
+                    <label for="exampleInputPassword1">Sub SubCategory Status</label>
                     <input type="text" class="form-control" value="{{$SingleSubCategory->status}}" name="sub_category_status">
                 </div>
 

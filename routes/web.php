@@ -51,3 +51,17 @@ Route::get('/home/subcategory/update/{id}','SubCategoryController@update')->name
 Route::post('/home/subcategory/update/confirm/{id}','SubCategoryController@updateConfirm')->name('subcategory.update.confirm');
 
 Route::get('/home/subcategory/delete/{id}','SubCategoryController@delete')->name('subcategory.delete');
+
+
+//SubSubCategory Route
+Route::get('/home/subsubcategory', 'SubSubCategoryController@index')->name('subsubcategory');
+
+Route::get('/home/subsubcategory/show', 'SubSubCategoryController@show')->name('subsubcategory.show');
+
+Route::post('/home/subsubcategory/insert', 'SubSubCategoryController@insert')->name('subsubcategory.insert');
+
+Route::get('/home/subsubcategory/update/{id}','SubSubCategoryController@update')->name('subsubcategory.update');
+
+Route::post('/home/subsubcategory/update/confirm/{id}','SubSubCategoryController@updateConfirm')->name('subsubcategory.update.confirm');
+
+Route::get('/home/subsubcategory/delete/{id}','SubSubCategoryController@delete')->name('subsubcategory.delete');

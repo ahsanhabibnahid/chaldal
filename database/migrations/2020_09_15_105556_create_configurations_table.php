@@ -17,6 +17,7 @@ class CreateConfigurationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('company_name')->nullable();
             $table->string('company_logo')->nullable();
+            $table->string('company_email')->nullable();
             $table->string('company_head_number')->nullable();
             $table->string('company_footer_number')->nullable();
             $table->string('company_address')->nullable();

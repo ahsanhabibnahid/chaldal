@@ -38,12 +38,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Category Icon</label>
+                    <label for="exampleInputPassword1">SubCategory Icon</label>
                     <input type="text" class="form-control" value="" name="sub_category_icon">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Category Status</label>
+                    <label for="exampleInputPassword1">SubCategory Status</label>
                     <input type="text" class="form-control" value="" name="sub_category_status">
                 </div>
 

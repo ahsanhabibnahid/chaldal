@@ -1,3 +1,4 @@
+
 @extends('backend.layout.master')
 @section('content')
 
@@ -12,43 +13,46 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{route('subcategory.update.confirm',$SingleSubCategory->id)}}">
+            <form method="POST" action="{{route('subsubcategory.insert')}}">
                 @csrf
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Serial</label>
-                    <input type="text" class="form-control" value="{{$SingleSubCategory->serial}}" name="sub_category_serial">
+                    <input type="text" class="form-control"  name="sub_category_serial">
                 </div>
 
+
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Category select</label>
+                    <label for="exampleFormControlSelect1">SubCategory select</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="category_id">
                         @foreach($category as $id => $name)
-                            <option value="{{ $id }}" {{ old('category_id') == $id ? 'selected' : '' }}>{{ $name }}</option>
+                            <option value="{{ $id }}" {{ old('subcategory_id') == $id ? 'selected' : '' }}>{{ $name }}</option>
                         @endforeach
                     </select>
                 </div>
 
+
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Name</label>
-                    <input type="text" class="form-control" value="{{$SingleSubCategory->name}}" name="sub_category_name">
+                    <label for="exampleInputPassword1">Sub SubCategory Name</label>
+                    <input type="text" class="form-control" value="" name="sub_category_name">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Icon</label>
-                    <input type="text" class="form-control" value="{{$SingleSubCategory->icon}}" name="sub_category_icon">
+                    <label for="exampleInputPassword1">Sub SubCategory Icon</label>
+                    <input type="text" class="form-control" value="" name="sub_category_icon">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">SubCategory Status</label>
-                    <input type="text" class="form-control" value="{{$SingleSubCategory->status}}" name="sub_category_status">
+                    <label for="exampleInputPassword1">Sub SubCategory Status</label>
+                    <input type="text" class="form-control" value="" name="sub_category_status">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Insert</button>
 
             </form>
         </div>
     </div>
+
 
 
 
