@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Configuration;
-use Image;
+
 
 class ConfigurationController extends Controller
 {
@@ -16,14 +16,14 @@ class ConfigurationController extends Controller
     public function configuration()
     {
         $result = Configuration::all();
-        return view('backend.pages.configuration',compact('result'));
+        return view('backend.pages.configuration',['result'=>$result]);
     }
 
     public function configurationUpdate(Request $request)
     {
         $request->validate([
             'id' => 'required',
-            'company_logo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'company_logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'company_email' => 'nullable|email',
             'company_head_number' => 'nullable|numeric|min:11',
             'company_footer_number' => 'nullable|numeric|min:11',

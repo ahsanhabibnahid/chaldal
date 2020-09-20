@@ -334,6 +334,16 @@
 
         </li>
 
+        <li class="">
+            <a href="{{route('subcategory')}}">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text"> Sub Category </span>
+            </a>
+
+            <b class="arrow"></b>
+
+        </li>
+
 
 
 

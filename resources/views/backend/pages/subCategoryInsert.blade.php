@@ -1,3 +1,4 @@
+
 @extends('backend.layout.master')
 @section('content')
 
@@ -12,27 +13,38 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{route('category.insert')}}">
+            <form method="POST" action="{{route('subcategory.insert')}}">
                 @csrf
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Serial</label>
-                    <input type="text" class="form-control" value="" name="category_serial">
+                    <input type="text" class="form-control"  name="sub_category_serial">
                 </div>
 
+
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Category Name</label>
-                    <input type="text" class="form-control" value="" name="category_name">
+                    <label for="exampleFormControlSelect1">Category select</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="category_id">
+                        @foreach($category as $id => $name)
+                            <option value="{{ $id }}" {{ old('category_id') == $id ? 'selected' : '' }}>{{ $name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">SubCategory Name</label>
+                    <input type="text" class="form-control" value="" name="sub_category_name">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Category Icon</label>
-                    <input type="text" class="form-control" value="" name="category_icon">
+                    <input type="text" class="form-control" value="" name="sub_category_icon">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Category Status</label>
-                    <input type="text" class="form-control" value="" name="category_status">
+                    <input type="text" class="form-control" value="" name="sub_category_status">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Insert</button>
@@ -40,7 +52,6 @@
             </form>
         </div>
     </div>
-
 
 
 

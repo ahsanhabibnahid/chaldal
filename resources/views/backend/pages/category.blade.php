@@ -23,7 +23,7 @@
                     <td>{{$CategoryData->icon}}</td>
                     <td>{{$CategoryData->status}}</td>
                     <td><a href="{{route('category.update',$CategoryData->id)}}">Edit</a></td>
-                    <td><a href="#">Delete</a></td>
+                    <td><a href="{{route('category.delete',$CategoryData->id)}}">Delete</a></td>
                 </tr>
             @endforeach
             </tbody>

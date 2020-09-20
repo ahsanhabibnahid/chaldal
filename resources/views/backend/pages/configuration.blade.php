@@ -13,9 +13,10 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{url('/home/configuration/update')}}" enctype="multipart/form-data">
-                @csrf
                 @foreach($result as $ConfigurationDataKey)
+
+            <form method="POST" action="{{route('configuration.update',$ConfigurationDataKey->id)}}" enctype="multipart/form-data">
+                @csrf
                     <div class="form-group invisible">
                         <label for="exampleInputPassword1">ID</label>
                         <input type="text" class="form-control" value="{{$ConfigurationDataKey->id}}" name="id">
