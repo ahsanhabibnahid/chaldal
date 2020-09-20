@@ -11,16 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6095a4-2286-4a23-9657-f5b91087b17c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/subSubCategoryInsert.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/subSubCategoryUpdate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/brand.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/brandInsert.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/brandUpdate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_15_105556_create_configurations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_105556_create_configurations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_19_053115_create_sub_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_19_053115_create_sub_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_061124_create_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_061124_create_brands_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/leftSideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/leftSideBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/subCategoryInsert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/subCategoryInsert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/subCategoryUpdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/subCategoryUpdate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +183,7 @@
       <workItem from="1600357030518" duration="11000" />
       <workItem from="1600488322883" duration="25370000" />
       <workItem from="1600529370741" duration="398000" />
-      <workItem from="1600574500329" duration="7420000" />
+      <workItem from="1600574500329" duration="11746000" />
     </task>
     <servers />
   </component>
@@ -206,14 +203,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="63" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600578322041">
+    <state x="347" y="63" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600583699883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="347" y="63" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600578322041" />
-    <state x="492" y="281" key="NewPhpFileDialog" timestamp="1600578181771">
+    <state x="347" y="63" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600583699883" />
+    <state x="492" y="281" key="NewPhpFileDialog" timestamp="1600583951829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="281" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600578181771" />
+    <state x="492" y="281" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1600583951829" />
     <state x="472" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600509582857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

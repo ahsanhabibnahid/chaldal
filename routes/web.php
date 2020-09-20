@@ -65,3 +65,17 @@ Route::get('/home/subsubcategory/update/{id}','SubSubCategoryController@update')
 Route::post('/home/subsubcategory/update/confirm/{id}','SubSubCategoryController@updateConfirm')->name('subsubcategory.update.confirm');
 
 Route::get('/home/subsubcategory/delete/{id}','SubSubCategoryController@delete')->name('subsubcategory.delete');
+
+
+//Brand Route
+Route::get('/home/brand', 'BrandController@index')->name('brand');
+
+Route::get('/home/brand/show', 'BrandController@show')->name('brand.show');
+
+Route::post('/home/brand/insert', 'BrandController@insert')->name('brand.insert');
+
+Route::get('/home/brand/update/{id}','BrandController@update')->name('brand.update');
+
+Route::post('/home/brand/update/confirm/{id}','BrandController@updateConfirm')->name('brand.update.confirm');
+
+Route::get('/home/brand/delete/{id}','BrandController@delete')->name('brand.delete');
